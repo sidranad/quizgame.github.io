@@ -1,0 +1,141 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border:none;
+    outline:none;
+    font-family: 'poppins', sans-serif;
+}
+
+body{
+    background: linear-gradient(to right bottom, #4682b4,#006994,#00416a, #003153,#000036);
+    color:white;
+    display:grid;
+    place-items: center;
+    width:100%;
+    height:100vh;
+}
+video{
+    width: 500px;
+}
+.quizContainer{
+    width:80%;
+    max-width:850px;
+    padding:30px;
+    text-align:center;
+    display:none;
+}
+.quizContainer h1{
+    font-size: 36.5px;
+    margin-bottom: 40.5px;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+   
+
+}
+span{
+    color:#43b3ae;
+}
+.quizContainer .quizQuestions{
+    font-size: 26px;
+    margin-top: 20px;
+    
+}
+.quizContainer .questionChoices{
+    margin-top: 20px;
+    
+}
+.Choices {
+font-size: 20px;
+background-color: white;
+    color: black;
+  margin:10px auto;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: left;
+    width: 60%;
+    cursor: pointer;
+    
+}
+.Choices:hover{
+    background-color: aquamarine;
+}
+.nextBtn{
+    width:60%;
+    font-size: 20px;
+    padding: 12px 20px;
+    font-weight: 600;
+    margin: 20px auto 0 auto;
+    background-color: #49796b ;
+    border: none;
+    border-radius: 5px;
+    color:white;
+    cursor: pointer;
+
+
+}
+.nextBtn:hover{
+    background-color:#319177;
+}
+ .Choices.selected{
+    background-color: #319177;
+    color: white;
+}
+
+.scoreCard{
+    font-size: 24px;
+    margin-top: 20px;
+}
+.alert{
+    background-color: #319177;
+    border-radius: 5px;
+    width:100%;
+    padding:12px;
+    color:white;
+    position: absolute;
+    top:0;
+    display:none;
+    font-weight: bolder;
+}
+
+.startBtn{  
+    width:15%;
+    text-align: center;
+    padding-block:20px;
+    background-color:#49796b ;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 30px;
+    border-radius: 5px;
+}
+.timer{
+    position:absolute;
+    bottom:20px ;
+    left: 20px;
+    width: 72px;
+    height: 72px;
+    border-radius:50%;
+    background-color: darkolivegreen;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bolder;
+    border:2px solid darkgreen;
+    padding:12px;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+@media screen and (max-width:900px){
+    .quizContainer{
+        width:100%;
+        margin-top:50px;
+    }
+    .quizContainer h1{
+        font-size: 24px;
+    }
+    .quizContainer .quizQuestions{
+        font-size: 22px;
+    }
+}
